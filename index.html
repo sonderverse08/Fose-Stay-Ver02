@@ -67,21 +67,18 @@
                 <form id="searchForm">
                     <input type="hidden" name="booking_type" id="selectedType" value="hour">
 
-                    <div class="type-icon-header d-flex justify-content-center border-bottom py-2">
-                        <button type="button"
-                            class="btn active border-0 d-flex flex-column align-items-center tab-btn"
+                    <div class="type-icon-header d-flex justify-content-center pt-1">
+                        <button type="button" class="btn active border-0 d-flex flex-column align-items-center tab-btn"
                             data-tab="hour">
                             <i class="fa-regular fa-hourglass mb-1"></i>
                             <span>Theo giờ</span>
                         </button>
-                        <button type="button"
-                            class="btn border-0 d-flex flex-column align-items-center tab-btn"
+                        <button type="button" class="btn border-0 d-flex flex-column align-items-center tab-btn"
                             data-tab="night">
                             <i class="fa-solid fa-moon mb-1"></i>
                             <span>Qua đêm</span>
                         </button>
-                        <button type="button"
-                            class="btn border-0 d-flex flex-column align-items-center tab-btn"
+                        <button type="button" class="btn border-0 d-flex flex-column align-items-center tab-btn"
                             data-tab="day">
                             <i class="fa-regular fa-calendar mb-1"></i>
                             <span>Theo ngày</span>
@@ -102,11 +99,12 @@
                                     </button>
                                     <input type="hidden" name="location" id="locationInput">
                                     <ul class="dropdown-menu border-0 shadow-lg mt-3">
-                                        <li><a class="dropdown-item py-2" href="#" data-value="Hồ Chí Minh">Hồ Chí Minh</a></li>
+                                        <li><a class="dropdown-item py-2" href="#" data-value="Hồ Chí Minh">Hồ Chí
+                                                Minh</a></li>
                                         <li><a class="dropdown-item py-2" href="#" data-value="Hà Nội">Hà Nội</a></li>
                                         <li><a class="dropdown-item py-2" href="#" data-value="Đà Nẵng">Đà Nẵng</a></li>
-                                        <li><a class="dropdown-item py-2" href="#" data-value="Đà Nẵng">Cần Thơ</a></li>
-                                        <li><a class="dropdown-item py-2" href="#" data-value="Đà Nẵng">Đà Lạt</a></li>
+                                        <li><a class="dropdown-item py-2" href="#" data-value="Cần Thơ">Cần Thơ</a></li>
+                                        <li><a class="dropdown-item py-2" href="#" data-value="Đà Lạt">Đà Lạt</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -127,6 +125,8 @@
                                 <input type="date" class="search-inner-input" id="checkout" required>
                             </div>
 
+                            <div class="search-v-divider"></div>
+
                             <div class="search-button-container">
                                 <button type="submit" class="btn-search-pill">
                                     <i class="fas fa-search me-2"></i>Tìm kiếm
@@ -137,6 +137,60 @@
                 </form>
             </div>
         </section>
+
+        <section class="suggestion">
+            <div class="container position-relative">
+                <h3 class="fw-bold mb-4" style="color: #002d5b; margin-left: 10px;">Gợi ý từ Fose Stay</h3>
+
+                <div class="slider-container">
+                    <button class="suggestion-btn prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+
+                    <div class="suggestion-wrapper overflow-hidden pt-1 pb-4">
+                        <div class="row flex-nowrap g-3" id="suggestionRow">
+
+                            <div class="col-6 col-md-4 col-lg-3 slider-item">
+                                <div class="suggestion-card">
+                                    <div class="icon-box"><i class="fa-solid fa-tags"></i></div>
+                                    <p>Voucher 39K <br> Stay Hết Ý</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 slider-item">
+                                <div class="suggestion-card">
+                                    <div class="icon-box"><i class="fa-regular fa-face-grin-hearts"></i></div>
+                                    <p>Top Stay <br> Được Chọn</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 slider-item">
+                                <div class="suggestion-card">
+                                    <div class="icon-box"><i class="fa-solid fa-venus-mars"></i></div>
+                                    <p>Love <br> Room</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 slider-item">
+                                <div class="suggestion-card">
+                                    <div class="icon-box"><i class="fa-regular fa-comments"></i></div>
+                                    <p>Top Review</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-3 slider-item">
+                                <div class="suggestion-card">
+                                    <div class="icon-box"><i class="fa-solid fa-champagne-glasses"></i></div>
+                                    <p>Dining</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="suggestion-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
